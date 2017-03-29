@@ -2,10 +2,26 @@ $(function(){
   var $doc = $(document);
   var $menu = $('menu');
   var $links = $('menu a');
-  var $scroll = $('section');
+  var $dropdown = $('#drop a');
+  var $section = $('section');
 
-  $scroll.on('scroll', function(event){
-    var scrollPos = $scroll.scrollTop();
+  $section.on('scroll', function(e){
+
+    var scrollPos = $section.scrollTop();
+
+    if( scrollPos != 0){
+      $menu.css({"background" : "rgba(0, 0, 0, 0.8)"});
+      $("menu ul li a").css({"color" : "rgb(255, 255, 255)"});
+      $("menu ul li a").hover(function(){
+        $(this).css({"color" : "rgb(0, 0, 0)"});
+        $(this).css({"color" : "rgb(255, 255, 255)"});
+      });
+    } else {
+      $menu.css({"background" : "transparent"});
+      $("menu ul li a").css({"color" : "rgb(0, 0, 0)"});
+      $(".active").css({"color" : "rgb(255, 255, 255)"});
+    };
+
     $links.each(function () {
       var $link = $(this);
       var $target = $($link.attr('href'));
@@ -17,20 +33,44 @@ $(function(){
     });
   });
 
-  $('a[href^="#"]').on('click', function(e){
-    e.preventDefault();
-    // $scroll.off('scroll');
-    $links.removeClass('active');
-    $(this).addClass('active');
+  $('menu a[href^="#"]').on('click', function(e){
+    // e.preventDefault();
+    // $section.off('scroll');
+
+    // $links.removeClass('active');
+    // $(this).addClass('active');
+    // var closest = $(this).closest('div').attr('.dropdown-content');
+    // var closest = $('a').parent('.dropdown-content').attr('id');
+    // $('.childElementName').closest('.ancestorName').attr('idName')
+    // console.log(closest);
+
     var target = this.hash;
     var $target = $(target);
-    var scrollPos = $scroll.scrollTop();
-    var val = '57px';
-    $scroll.stop().animate({
-      'scrollTop': scrollPos + $target.offset().top - $menu.height() + val
+    var goTo = $target.position();
+    // console.log(goTo);
+    var scrollPos = $section.scrollTop();
+    $section.stop().animate({
+      'scrollTop': scrollPos + goTo.top
     }, 500, 'swing', function () {
       window.location.hash = target;
     });
+  });
+
+  $dropdown.on('click', function(e){
+    e.preventDefault();
+
+    var target = this.hash;
+    var $target = $(target);
+    var goTo = $target.position();
+
+    console.log(goTo);
+
+    $section.stop().animate({
+      'scrollTop':  goTo.top
+    }, 500, 'swing', function () {
+      window.location.hash = target;
+    });
+
   });
 
   // Mobile menu
@@ -41,15 +81,4 @@ $(function(){
   $('div.dropdown-content').children().on('click', function(){
     $('div.dropdown-content').toggle();
   })
-
-  $scroll.on('scroll', function(){
-    if( $scroll.scrollTop() == 0){
-      $menu.css({"background" : "transparent"});
-      $('menu ul').css({"background" : "transparent"});
-    } else {
-      $menu.css({"background" : "rgba(255, 255, 255, 0.7)"});
-      $('menu ul').css({"background" : "rgba(255, 255, 255, 0.7)"});
-    }
-  });
-
 });
