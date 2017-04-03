@@ -95,12 +95,11 @@ $(function(){
     setTimeout(function(){
       $allDiv.hide();
       $master.fadeIn();
-      $masterImg.fadeIn();
-    }, 4100);
+    }, 4200);
   };
   var endIntro = function (){
     setTimeout(function(){
-        $('.intro').fadeOut(900);
+        $('.intro').fadeOut(500);
         console.log('comming');
         $('*').css({"overflow": "visible"});
     }, 5000);
