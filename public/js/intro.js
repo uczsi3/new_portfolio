@@ -24,13 +24,13 @@ $(function(){
   // ****************************
 
   var backgroundIn = function(){
-    $('#front-mountain').fadeIn(800);
+    $('#front-mountain').fadeIn(400);
     setTimeout(function(){
-      $('#middle-mountain').fadeIn(800);
+      $('#middle-mountain').fadeIn(400);
+    }, 400);
+    setTimeout(function(){
+      $('#back-mountain').fadeIn(400);
     }, 800);
-    setTimeout(function(){
-      $('#back-mountain').fadeIn(800);
-    }, 1400);
   };
 
 
@@ -42,16 +42,16 @@ $(function(){
   };
   var showElements = function(arr){
     setTimeout(function(){
-      arr[0].toggle("slide", {'direction': "down"}, 600);
-      arr[1].delay(500).toggle("slide", {'direction': "left"}, 600);
-      arr[2].delay(300).toggle("slide", {'direction': "left"}, 600);
-      arr[3].toggle("slide", {'direction': "right"}, 600);
-      arr[4].delay(500).fadeIn(600); //toggle("pulsate", 600);
-      arr[5].delay(300).toggle("slide", {'direction': "down"}, 600);
-      arr[6].toggle("slide", {'direction': "up"}, 600);
-      arr[7].delay(500).toggle("slide", {'direction': "right"}, 600);
-      arr[8].delay(300).toggle("slide", {'direction': "down"}, 600);
-    }, 2100);
+      arr[0].toggle("slide", {'direction': "down"}, 400);
+      arr[1].delay(300).toggle("slide", {'direction': "left"}, 400);
+      arr[2].delay(150).toggle("slide", {'direction': "left"}, 400);
+      arr[3].toggle("slide", {'direction': "right"}, 400);
+      arr[4].delay(300).fadeIn(400); //toggle("pulsate", 400);
+      arr[5].delay(150).toggle("slide", {'direction': "down"}, 400);
+      arr[6].toggle("slide", {'direction': "up"}, 400);
+      arr[7].delay(300).toggle("slide", {'direction': "right"}, 400);
+      arr[8].delay(150).toggle("slide", {'direction': "down"}, 400);
+    }, 1250);
   };
   // var slideOut = function (arr){
   //   setTimeout(function(){
@@ -72,13 +72,16 @@ $(function(){
         this.rotate({
           angle: arrParamTo[i],
           animateTo: arrParamFrom[i],
-          duration: 1500
+          duration: 1000
         });
       });
-    }, 3200);
+    }, 1800);
   };
   var slideInPlace = function(arr){
+    console.log('called');
     setTimeout(function(){
+      console.log('called in');
+
       arr[0].animate({left: "+=33.3333%"}, 600, 'easeInOutExpo').animate({ top: "+=33.3333%" }, 600, 'easeInOutExpo');
       arr[1].delay(100).animate({left: "-=33.333%"}, 600, 'easeInOutExpo').animate({top: "+=33.3333%" }, 600, 'easeInOutExpo');
       arr[2].delay(200).animate({top: "+=66.6666%" }, 600, 'easeInOutExpo');
@@ -88,19 +91,19 @@ $(function(){
       arr[6].delay(300).animate({top: "-=66.6666%"}, 600, 'easeInOutExpo').animate({left: "+=33.3333%"}, 600, 'easeInOutExpo');
       arr[7].delay(300).animate({left: "+=33.3333%",  }, 600, 'easeInOutExpo').animate({top: "-=33.3333%",  }, 600, 'easeInOutExpo');
       arr[8].delay(300).animate({left: "-=66.6666%" }, 600, 'easeInOutExpo').animate({top: "-=66.6666%" }, 600, 'easeInOutExpo');
-    }, 4700);
+    }, 2700);
     setTimeout(function(){
       $allDiv.hide();
       $master.fadeIn();
       $masterImg.fadeIn();
-    }, 5900);
+    }, 4100);
   };
   var endIntro = function (){
     setTimeout(function(){
         $('.intro').fadeOut(900);
         console.log('comming');
         $('*').css({"overflow": "visible"});
-    }, 7300);
+    }, 5000);
   };
   var mainF = function (arrDiv, arrImg) {
     //         |5 * 4 * 9|      |8 * 3 * 1|      |1 * 2 * 3|
