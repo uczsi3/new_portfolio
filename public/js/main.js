@@ -1,5 +1,5 @@
 
-$(document).ready(function () {
+$(document).ready(function () { 
   $(document).on("scroll", onScroll);
 
   // $(document).on('scroll', function(e){
