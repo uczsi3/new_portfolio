@@ -1,90 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <meta name="description" content="Made By J portfolio">
+  <meta name="author" content="MadeByJ">
+  <meta name="language" content="English" />
   <meta charset="utf-8">
+  <link rel="shortcut icon" href="public/img/favicon.jpg" />
+
   <title>MBJ portfolio</title>
 
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-
-  <script
-  type="text/javascript"
-  src="prefixfree.min.js"></script>
-
-  <script
-  type="text/javascript"
-  src="scrollspy.min.js"></script>
-
-  <link
-  rel="stylesheet"
-  href="main.css">
-
-  <script
-  type="text/javascript"
-  src="scrollspy.js"></script>
-
-  <script
-  type="text/javascript"
-  src="main.js"></script>
-
-  <!--
-  <script type="text/javascript" src=""></script>
-  <script type="text/javascript" src=""></script>
-  <script type="text/javascript" src=""></script>
-  <script type="text/javascript" src=""></script> -->
+  <!--  intro  -->
+  <link rel="stylesheet" href="public/css/intro.css">
+  <!--  main  -->
+  <link rel="stylesheet" href="public/css/main.css">
 </head>
 <body>
-  <menu>
-    <ul>
-      <li><a href="#home"  class="active">Home</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </menu>
+  <!--  intro  -->
+  <div class="intro">
+    <div class="elements">
 
-  <div class="dropdown">
-    <button class="dropbtn">
-      <div class="hamb hamb1"></div>
-      <div class="hamb hamb2"></div>
-      <div class="hamb hamb3"></div>
-    </button>
+      <div class="master">
+        <img id="master-img" src="public/img/elements/MASTER.png" />
+      </div>
 
-    <div id="drop" class="dropdown-content">
-      <a href="#home">Home</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <div class="element TL">
+        <img id="TL-img" class="intro-img" src="public/img/elements/CC.png" />
+      </div>
+      <div class="element TC">
+        <img id="TC-img" class="intro-img" src="public/img/elements/CL.png" />
+      </div>
+      <div class="element TR">
+        <img id="TR-img" class="intro-img" src="public/img/elements/BR.png" />
+      </div>
+      <div class="element CL">
+        <img id="CL-img" class="intro-img" src="public/img/elements/TR.png" />
+      </div>
+      <div class="element CC">
+        <img id="CC-img" class="intro-img" src="public/img/elements/BC.png" />
+      </div>
+      <div class="element CR">
+        <img id="CR-img" class="intro-img" src="public/img/elements/BL.png" />
+      </div>
+      <div class="element BL">
+        <img id="BL-img" class="intro-img" src="public/img/elements/TC.png" />
+      </div>
+      <div class="element BC">
+        <img id="BC-img" class="intro-img" src="public/img/elements/CR.png" />
+      </div>
+      <div class="element BR">
+        <img id="BR-img" class="intro-img" src="public/img/elements/TL.png" />
+      </div>
+
     </div>
   </div>
 
-  <section>
-    <div id="home">
-      <div id="conteiner-home" class="container">
-        <h1>Home</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <!--  menu  -->
+  <div class="menu f-prim">
+    <div id="menu-center">
+      <ul>
+        <li>
+          <a class="active" href="#home">home</a>
+        </li>
+        <li>
+          <a href="#portfolio">portfolio</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- mountains -->
+
+  <div id="back-mountain" class="hills"></div>
+  <div id="middle-mountain" class="hills"></div>
+  <div id="front-mountain" class="hills"></div>
+
+  <!--  main content  -->
+  <div class="wrapper">
+    <div id="home" class="main-container f-sec">
+      <div id="home-main" class="container">
+        <div class="home-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <a href="#about" class="next">next</a>
       </div>
     </div>
-    <div id="portfolio">
-      <div class="container">
-        <h1>Portfolio</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div id="portfolio" class="main-container f-sec">
+      <div id="portfolio-main" class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#contact" class="next">next</a>
       </div>
     </div>
-    <div id="about">
-      <div class="container">
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div id="about" class="main-container f-sec">
+      <div id="about-main" class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#portfolio" class="next">next</a>
       </div>
     </div>
-    <div id="contact">
-      <div class="container">
-        <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div id="contact" class="main-container f-sec">
+      <div id="contact-main" class="container" class="next">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
-  </section>
+  </div>
+
+
+  <!--  jQuery  -->
+  <script src="public/js/lib/jquery-3.2.0.min.js" ></script>
+  <!--  jQuery UI custom, only effects  -->
+  <script src="public/js/lib/jquery-ui.min.js"></script>
+  <!--   rotating lib -->
+  <script src="public/js/lib/rotate.js"></script>
+  <!--  intro animation  -->
+  <script src="public/js/intro.js"></script>
+  <!--  visibility detector  -->
+  <script src="public/js/lib/visible.min.js"></script>
+  <!--  crossbrowser css generator  -->
+  <script src="public/js/lib/prefixfree.min.js"></script>
+  <!--  relative value converter for old browsers and android -->
+  <script src="public/js/lib/prefixfree.relativeunits.js"></script>
+  <!--  main script  -->
+  <script src="public/js/main.js"></script>
+
+
 </body>
 </html>
