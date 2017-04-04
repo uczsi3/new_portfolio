@@ -1,0 +1,230 @@
+/*
+****************************
+****************************
+****************************
+****************************
+****************************
+****************************
+HOME
+*/
+h1{font-size: 5rem; line-height: 6rem;   color: #292929;}
+h2{font-size: 4rem; line-height: 5rem;   color: #292929;}
+h3{font-size: 3rem; line-height: 4rem;   color: #292929;}
+h4{font-size: 2rem; line-height: 3rem;   color: #292929;}
+h5{font-size: 1rem; line-height: 2rem;   color: #292929;}
+a{text-decoration: none!important;}
+#home{
+
+}
+
+#home-main {
+  padding: 0;
+  padding-top: 10vh;
+}
+.home-up {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin: 10px;
+  padding: 20px;
+  color: rgb(30, 48, 74);
+  text-shadow: rgb(117, 151, 198) 4px 4px 4px;
+}
+.home-down {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+.ico-home {
+  width: 50px;
+  height: 50px;
+  max-height: 50px;
+  cursor: pointer;
+}
+.ico-left {
+  width: 45%;
+  float: left;
+  text-align: right;
+}
+.ico-right {
+  width: 45%;
+  float: right;
+  text-align: left;
+}
+
+.arrow-home{
+
+}
+
+/*
+****************************
+****************************
+****************************
+****************************
+****************************
+****************************
+PROJECTS
+*/
+#portfolio{
+
+}
+
+#portfolio-main {
+  padding-top: 55px;
+}
+
+.portfolio-text {
+  margin-top
+  margin: auto auto;
+}
+.portfolio-head {
+
+}
+.portfolio-content {
+
+}
+.arrow-portfolio{
+
+}
+
+/* siema carousel */
+.siema{
+  width: 100%;
+  margin: 0 auto;
+}
+.center{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.img-siema {
+  cursor: grab;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.img-siema.grabbing{
+  cursor: grabbing;
+}
+.siema-text {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+
+}
+.siema-project-name {
+  width: 50%;
+  margin: 0;
+  padding:0;
+  float: left;
+  border: 1px solid red;
+
+}
+.siema-icons {
+  width: 50%;
+  margin: 0;
+  padding:0;
+  float: right;
+}
+.siema-img-icon {
+  display: inline;
+  width: 50%;
+  max-width: 50px;
+}
+
+.about-project {
+  width: 100%;
+  text-align: center;
+  display: inline;
+  border: 1px solid green;
+}
+
+/*
+****************************
+****************************
+****************************
+****************************
+****************************
+****************************
+ABOUT
+*/
+#about{
+
+}
+
+#about-main {
+  /**/
+}
+
+.about-text {
+
+}
+.about-head {
+
+}
+.about-content {
+
+}
+.arrow-about{
+
+}
+
+
+/*
+****************************
+****************************
+****************************
+****************************
+****************************
+****************************
+CONTACT
+*/
+#contact{
+
+}
+
+#contact-main {
+  /**/
+}
+
+.contact-text {
+
+}
+.contact-head {
+
+}
+.contact-content {
+
+}
+.arrow-contact{
+  transform: rotate(180deg);
+}
+
+
+@media and (min-width: 900px){
+  h1{font-size: 5rem; line-height: 6rem;   color: #292929;}
+  h2{font-size: 4rem; line-height: 5rem;   color: #292929;}
+  h3{font-size: 3rem; line-height: 4rem;   color: #292929;}
+  h4{font-size: 2rem; line-height: 3rem;   color: #292929;}
+  h5{font-size: 1rem; line-height: 2rem;   color: #292929;}
+}
+
+
+@media and (max-height: 600px){
+  .container {
+    padding-top: 10vh;
+  }
+  h1{font-size: 4rem; line-height: 5rem;   color: #292929;}
+  h2{font-size: 3rem; line-height: 4rem;   color: #292929;}
+  h3{font-size: 2rem; line-height: 3rem;   color: #292929;}
+  h4{font-size: 1rem; line-height: 2rem;   color: #292929;}
+  h5{font-size: 0.7rem; line-height: 1rem;   color: #292929;}
+}
+@media and (max-height: 400px){
+  h1{font-size: 3rem; line-height: 4rem;   color: #292929;}
+  h2{font-size: 2rem; line-height: 3rem;   color: #292929;}
+  h3{font-size: 1rem; line-height: 2rem;   color: #292929;}
+  h4{font-size: 0.7rem; line-height: 1rem;   color: #292929;}
+  h5{font-size: 0.5rem; line-height: 1rem;   color: #292929;}
+}
