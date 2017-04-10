@@ -5,10 +5,10 @@ new Siema({
   easing: 'cubic-bezier(.11,.73,.57,1.53)',
   perPage: 1,
   loop: true,
-  // onInit: function(){},
-  onChange: function(){
-
-  },
+  // // onInit: function(){},
+  // onChange: function(){
+  //
+  // },
 });
 
 
@@ -42,7 +42,7 @@ $(document).ready(function () {
       $(this).removeClass('active');
     });
     $(this).addClass('active');
-    console.log(this);
+    // console.log(this);
     var target = this.hash,
     menu = target;
     $target = $(target);
@@ -71,6 +71,12 @@ $(document).ready(function () {
 
 function onScroll(event){
   var scrollPos = $(document).scrollTop();
+  var windowHeight = $(window).innerHeight();
+  // console.log('scrollPos: ', scrollPos); // =
+  // console.log('window: ', $(window).scrollTop());
+  // console.log('windowHeight', $(window).innerHeight());
+
+
   $('#menu-center a').each(function () {
     var currLink = $(this);
     var refElement = $(currLink.attr("href"));

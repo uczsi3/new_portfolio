@@ -86,86 +86,59 @@ PROJECTS
 }
 
 #portfolio-main {
-  padding-top: 55px;
+  padding: 55px auto;
 }
 
-.portfolio-text {
-  margin-top
-  margin: auto auto;
-}
-.portfolio-head {
-
-}
-.portfolio-content {
-
-}
-.arrow-portfolio{
-
-}
-
-/* siema carousel */
-.siema{
-  width: 100%;
-  height: auto;
-  max-height: 900px;
-  margin: 0 auto;
-  margin-bottom: 1000px;;
-}
-.center{
-  width: 100%;
-  margin: 0 auto;
+.photo-box {
+  width: 30%;
+  margin: 10px 1.2%;
+  display: inline-block;
   text-align: center;
-  float: none;
+  border-radius: 15px;
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.91) 47%, rgba(237,237,237,0.8) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.91)), color-stop(100%, rgba(237,237,237,0.8)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.91) 47%, rgba(237,237,237,0.8) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.91) 47%, rgba(237,237,237,0.8) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.91) 47%, rgba(237,237,237,0.8) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,0.91) 47%, rgba(237,237,237,0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
 }
-.img-siema {
-  cursor: grab;
-  max-width: 100%;
+.photo {
+  width: auto;
   height: auto;
-  max-height: 350px;
-  margin: 0 auto;
-}
-.img-siema.grabbing{
-  cursor: grabbing;
-}
-.siema-text {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 0;
-}
-.siema-project-name {
-  width: 100%;
+  display: inline;
   margin: 0;
-  padding:0;
-  float: left;
+  padding: 0;
 }
-.siema-icons {
-  width: 100%;
-  margin: 0;
-  padding:0;
-  float: right;}
-  .siema-icons-link {
-    line-height: 0;
-    font-size: 0;
-  }
-  .siema-img-icon {
-    display: inline;
-    width: 50%;
-    max-width: 50px;
-    margin: 0 10px 0 10px;
-    padding: 0;
-  }
-  .about-project {
-    display: block;
-    float:none;
-    width: 100%;
-    text-align: center;
-  }
-  .about-project h5 {
-    line-height: 1.3rem;
-  }
+.portfolio-img {
+  border: 1px solid rgb(237, 237, 237);
+  border-radius: 15px;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 0;
+}
+.photo-box:hover {
+  cursor: auto;
+  background-color: #898989;
+  transition: 300ms;
+}
 
-  /*
+.portfolio-icon {
+  display: inline;
+  max-width: 25px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.siema {
+  display: none;
+}
+
+/*
   ****************************
   ****************************
   ****************************
@@ -190,9 +163,6 @@ PROJECTS
     text-align: center;
     padding-top: 0;
     margin: 0;
-    /*border: 1px solid red;*/
-    /*clear: both;*/
-
   }
 
 
@@ -224,7 +194,7 @@ PROJECTS
   }
 
   .logo-container {
-    height: 8vh;
+    height: 6vh;
     width: 80%;
     padding-top: 10px;
     margin: auto;
@@ -252,7 +222,7 @@ PROJECTS
     display: inline;
     width: 13%;
     height: 7px;
-    margin: 3vh 1vw;
+    margin: 2vh 1vw;
     float: right;
     border-radius: 10px;
   }
@@ -344,17 +314,111 @@ PROJECTS
     h3{font-size: 3rem; line-height: 4rem;   color: #292929;}
     h4{font-size: 2rem; line-height: 3rem;   color: #292929;}
     h5{font-size: 1rem; line-height: 2rem;   color: #292929;}
-    /*.logo {
-      width: 60px;
-    }
-    .logo-inline{
-      width: 30px;
-    }*/
   }
+
   @media (max-width: 500px) {
     .about-project{display: none;}
     h4.email{font-size: 0.6rem;}
     .bar-text {display: none;}
+    .photo-box {
+      width: 45%;
+      margin: 10px 2%;
+      display: inline-block;
+    }
+    .photo {
+      width: 50%;
+      height: auto;
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+    /*.portfolio-img {
+      border: 1px solid #c2c2c2;
+      border-radius: 15px;
+      max-width: 80%;
+      width: auto;
+      height: auto;
+      margin: 10px;
+      padding: 0;
+    }*/
+
+    .portfolio-icon {
+      display: none;
+      max-width: 25px;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .bars {
+      margin: 1vh 1vw;
+    }
+
+    /* siema carousel */
+    .photo-box {
+      display: none;
+    }
+    .siema{
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 900px;
+      margin: 0 auto;
+      margin-bottom: 1000px;;
+    }
+    .center{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      float: none;
+    }
+    .img-siema {
+      cursor: grab;
+      max-width: 100%;
+      height: auto;
+      max-height: 350px;
+      margin: 0 auto;
+    }
+    .img-siema.grabbing{
+      cursor: grabbing;
+    }
+    .siema-text {
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 0;
+    }
+    .siema-project-name {
+      width: 100%;
+      margin: 0;
+      padding:0;
+      float: left;
+    }
+    .siema-icons {
+      width: 100%;
+      margin: 0;
+      padding:0;
+      float: right;}
+      .siema-icons-link {
+        line-height: 0;
+        font-size: 0;
+      }
+      .siema-img-icon {
+        display: inline;
+        width: 50%;
+        max-width: 50px;
+        margin: 0 10px 0 10px;
+        padding: 0;
+      }
+      .about-project {
+        display: block;
+        float:none;
+        width: 100%;
+        text-align: center;
+      }
+      .about-project h5 {
+        line-height: 1.3rem;
+      }
   }
 
 
