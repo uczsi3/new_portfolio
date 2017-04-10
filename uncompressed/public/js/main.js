@@ -1,10 +1,4 @@
-// siema carousel
-// var mySiema = new Siema({
-//       perPage: 1,
-//       loop: true,
-//       duration: 600,
-//       easing: 'cubic-bezier(.11,.73,.57,1.53)',
-//     });
+//siema.js carousel
 new Siema({
   selector: '.siema',
   duration: 500,
@@ -36,7 +30,10 @@ $(".img-siema").on("mouseup touchend", function(e) {
 
 
 $(document).ready(function () {
+  // keep menu hover onScroll
   $(document).on("scroll", onScroll);
+
+  // menu hover on click
   $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
@@ -45,7 +42,7 @@ $(document).ready(function () {
       $(this).removeClass('active');
     });
     $(this).addClass('active');
-
+    console.log(this);
     var target = this.hash,
     menu = target;
     $target = $(target);
@@ -58,10 +55,11 @@ $(document).ready(function () {
   });
 
   // bouncing button on bottom
-  setInterval(function() {
-    $('.img-arrow').effect("bounce",{times: 2},2000);
-  }, 2000);
+  // setInterval(function() {
+  //   $('.img-arrow').effect("bounce",{times: 2},2000);
+  // }, 2000);
   var h1 = $('h1');
+
   setInterval(function(){
     h1.animate({'line-height' : '6.5rem'}, 'slow');
     h1.animate({'line-height' : '6rem'}, 'slow');

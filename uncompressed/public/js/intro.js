@@ -109,7 +109,7 @@ $(function(){
   var endIntro = function (){
     setTimeout(function(){
         $('.intro').fadeOut(500);
-    }, 5000); // 5000);
+    }, 0); // 5000);
   };
 
   var runThatShi = function (arrDiv, arrImg) {

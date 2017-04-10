@@ -9,6 +9,15 @@ a{text-decoration: none!important;}
   transition-duration: .5s;
 }
 
+hr {
+  height: 1px;
+  border: 1px;
+  margin: 0 10%;
+  border-width: 1px;
+  border-color: #989898;
+  background-color: #989898;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 /*
 ****************************
 ****************************
@@ -179,32 +188,24 @@ PROJECTS
   .about-text {
     width: 100%;
     text-align: center;
-    padding: 10px;
     padding-top: 0;
     margin: 0;
+    /*border: 1px solid red;*/
+    /*clear: both;*/
+
   }
-  .about-head {
-    width: 100%;
-    text-align: left;
-    float: left;
-    display: block;
-    margin-bottom: 50px;
-  }
+
 
   .about-element {
-    height: 25%;
+    display: inline;
     width: 100%;
     margin: 0;
-    padding: 10px;
-    margin-bottom: 25px;
+    padding: 0 auto;
     text-align: center;
   }
-  .element-head {
-    margin-left: 10px;
-  }
+
 
   .element-content{
-    display: inline-block;
     text-align: center;
     width: 100%;
     margin: 0;
@@ -212,30 +213,69 @@ PROJECTS
     color: #292929;
     border-radius: 15px;
 
-    background: rgba(255,255,255,1);
-background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 83%, rgba(237,237,237,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(83%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
-background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 83%, rgba(237,237,237,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 83%, rgba(237,237,237,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 83%, rgba(237,237,237,1) 100%);
-background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 83%, rgba(237,237,237,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+    /*background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 83%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(83%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 83%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 83%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 83%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 83%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );*/
+  }
+
+  .logo-container {
+    height: 8vh;
+    width: 80%;
+    padding-top: 10px;
+    margin: auto;
+    display: inline-block;
   }
   .logo {
-    max-width: 20%;
+    width: auto;
     height: auto;
+    max-height: 100%;
     display: inline;
-    padding: 5px;
+    margin: auto;
+    padding-right: 10px;
+    float: left;
   }
-  .logo-big {
+  .logo-inline {
+    width: auto;
+    height: auto;
     max-width: 40%;
-    height: auto;
+    display: inline!important;
+  }
+  .logo-horizontal {
+    max-width: 120px;
+  }
+  .bars {
     display: inline;
-    padding: 5px;
+    width: 13%;
+    height: 7px;
+    margin: 3vh 1vw;
+    float: right;
+    border-radius: 10px;
   }
-  .arrow-about{
+  .bar-green {
+    background-color: green;
+    border: 2px solid green;
+  }
+  .empty {
+    border: 1px solid grey;
+  }
+  .bar-text {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 27%;
+    text-align: left;
+  }
+  .bar-text p {
+    display: inline;
+    width: auto;
+    margin: 0 auto;
+  }
 
-  }
+
 
 
   /*
@@ -304,11 +344,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     h3{font-size: 3rem; line-height: 4rem;   color: #292929;}
     h4{font-size: 2rem; line-height: 3rem;   color: #292929;}
     h5{font-size: 1rem; line-height: 2rem;   color: #292929;}
+    /*.logo {
+      width: 60px;
+    }
+    .logo-inline{
+      width: 30px;
+    }*/
   }
   @media (max-width: 500px) {
     .about-project{display: none;}
     h4.email{font-size: 0.6rem;}
-
+    .bar-text {display: none;}
   }
 
 
