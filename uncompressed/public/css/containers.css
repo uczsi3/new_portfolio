@@ -112,6 +112,7 @@ PROJECTS
   padding: 0;
 }
 .portfolio-img {
+  cursor: pointer;
   border: 1px solid rgb(237, 237, 237);
   border-radius: 15px;
   max-width: 80%;
@@ -121,9 +122,9 @@ PROJECTS
   padding: 0;
 }
 .photo-box:hover {
-  cursor: auto;
+  /*cursor: pointer;;*/
   background-color: #898989;
-  transition: 300ms;
+  transition: 400ms;
 }
 
 .portfolio-icon {
